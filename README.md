@@ -2,9 +2,9 @@
 <h2>Project description</h2>
 Examine existing permissions on the file system. Determine if permissions match authorization that should be given. If not, modify permissions to authorize appropriate users and remove any unauthorized access.
 <h2>Check file and directory details</h2>
-Use <strong><em>ls -la</em></strong> to list all files in the current directory along with permissions.<br>
-![CFDD](https://github.com/KhantivongJ/LinuxFilePermissions/blob/main/assets/CFDD.png)
+Use <strong><em>ls -la</em></strong> to list all files in the current directory along with permissions.<br><br>
 
+![Check file and directory details](/assets/CFDD.png)
 
 <h2>Describe the permissions string</h2>
 Permissions string is a set of 10 characters indicating the type of file as well as the permissions granted to the different types of owners; user, group, and others.<br><br>
@@ -20,13 +20,14 @@ Permissions string is a set of 10 characters indicating the type of file as well
 </ul>
 
 <h2>Change file permissions</h2>
-The organization does not allow Others to have write permissions to files. Removed permissions from “project_k.txt” using<br><em><strong>chmod o-w project_k.txt</strong></em><br>
+The organization does not allow Others to have write permissions to files. Removed permissions from “project_k.txt” using<br><em><strong>chmod o-w project_k.txt</strong></em><br><br>
+
 ![Changing File Permissions](/assets/CFP.png)
 
 <h2>Change file permissions on a hidden file</h2>
 .project_x.txt, should not have write permissions for anyone but user and group should be able to read the file.
 
-Used <strong><em>chmod u-w,g+r,g-w .project_x.txt</em></strong> to remove write permissions and add read permission.<br>
+Used <strong><em>chmod u-w,g+r,g-w .project_x.txt</em></strong> to remove write permissions and add read permission.<br><br>
 ![Change File Permissions on a Hidden File](/assets/CFPHF.png)
 
 
@@ -34,7 +35,8 @@ Used <strong><em>chmod u-w,g+r,g-w .project_x.txt</em></strong> to remove write 
 
 <h2>Change directory permissions</h2>
 Permission to the drafts directory should only be granted to the researcher2 user.
-Used <strong><em>chmod g-x drafts/</em></strong> to remove unauthorized access to the drafts directory.<br>
+Used <strong><em>chmod g-x drafts/</em></strong> to remove unauthorized access to the drafts directory.<br><br>
+
 ![Change Directory Permissions](/assets/CDP.png)
 
 <h2>Summary</h2>
