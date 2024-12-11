@@ -3,7 +3,7 @@
 Examine existing permissions on the file system. Determine if permissions match authorization that should be given. If not, modify permissions to authorize appropriate users and remove any unauthorized access.
 <h2>Check file and directory details</h2>
 Use <strong><em>ls -la</em></strong> to list all files in the current directory along with permissions.<br>
-![File and Directory Details](/assets/CFDD.png)
+![CFDD](https://github.com/KhantivongJ/LinuxFilePermissions/blob/main/assets/CFDD.png)
 
 
 <h2>Describe the permissions string</h2>
